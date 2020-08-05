@@ -46,10 +46,10 @@ actual commands:
 ```bash
 plink --bed wgs_hg38_ppmi.july2018.bed --bim wgs_hg38_ppmi.july2018_ORIGINAL.bim \
 --fam wgs_hg38_ppmi.july2018.fam --score META5_GRS_RSid.txt --out FOUNDIN_GRS
---score: 90 valid predictors loaded.
+# 90 valid predictors loaded.
 
 plink --bed wgs_hg38_ppmi.july2018.bed --bim wgs_hg38_ppmi.july2018_ORIGINAL.bim \
 --fam wgs_hg38_ppmi.july2018.fam --score META5_GRS_RSid_no_GBA_no_G2019S.txt --out FOUNDIN_GRS_no_GBA_LRRK2
---score: 86 valid predictors loaded.
+# 86 valid predictors loaded.
 ```
 
