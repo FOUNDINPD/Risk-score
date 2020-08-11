@@ -53,3 +53,21 @@ plink --bed wgs_hg38_ppmi.july2018.bed --bim wgs_hg38_ppmi.july2018_ORIGINAL.bim
 # 86 valid predictors loaded.
 ```
 
+### Additional risk variants extraction
+
+```bash 
+module load plink #if on Biowulf, this loads v1.9
+plink --bfile $yourfile --snps rs393152,rs429358,rs7412 --recodeA --out FOUNDIN_MAPT_APOE
+```
+
+### Additional risk variants extraction
+
+```bash 
+module load plink #if on Biowulf, this loads v1.9
+plink --bfile $yourfile --score rs393152,rs429358,rs7412 --recodeA --out FOUNDIN_MAPT_APOE
+```
+
+```bash 
+plink --bed wgs_hg38_ppmi.july2018.bed --bim wgs_hg38_ppmi.july2018_ORIGINAL.bim \
+--fam wgs_hg38_ppmi.july2018.fam --score AD_GRS_Kunkle.txt --out FOUNDIN_AD_GRS
+```
